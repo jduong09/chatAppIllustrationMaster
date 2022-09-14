@@ -1,0 +1,29 @@
+/* Universal Styles */
+body {
+  font-family: 'Rubik', sans-serif;
+}
+/* Chat App */
+.chat-app {
+  background-color: blue;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.chat-header {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  background-color: green;
+  display: flex;
+  align-items: center;
+}
+
+#chat-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid hsl()
+}
+
+/* Hero Div */
