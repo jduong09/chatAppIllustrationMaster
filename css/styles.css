@@ -6,24 +6,146 @@ body {
 .chat-app {
   background-color: blue;
   border-radius: 2rem;
-  padding: 1rem;
+  padding: .7rem;
+  width: 70%;
+  margin: 3rem auto;
 }
 
 .chat-header {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  border-bottom-left-radius: .5rem;
-  border-bottom-right-radius: .5rem;
-  background-color: green;
+  border-bottom-left-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  background: linear-gradient(to right,hsl(264, 100%, 61%), hsl(293, 100%, 63%));
   display: flex;
   align-items: center;
+  padding: 2rem .75rem .75rem .75rem;
+  position: relative;
+}
+
+.chat-header::after {
+  content: '';
+  width: 60%;
+  height: 40px;
+  border-radius: 500px;
+  position: absolute;
+  top: -20px;
+  left: 20%;
+  background-color: blue;
 }
 
 #chat-avatar {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  border: 1px solid hsl()
+  border: 2px solid hsl(0, 0%, 100%);
+  margin: 0 .5rem 0 0;
+}
+
+.chat-recipient {
+  color: hsl(0, 0%, 100%);
+}
+
+.chat-recipient > h2 {
+  font-size: .85rem;
+  font-weight: 500;
+}
+
+.availability {
+  font-size: .6rem;
+  color: hsl(276, 100%, 81%);
+}
+
+.chat-settings {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* Chat-log */
+.chat-log {
+  background-color: hsl(270, 20%, 96%);
+  margin-top: -16px;
+  padding-top: 2rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.chat-message {
+  border-top-left-radius: .75rem;
+  border-top-right-radius: .75rem;
+  padding: .75rem;
+  max-width: 70%;
+  width: fit-content;
+  margin-bottom: 1rem;
+  font-size: .6rem;
+}
+
+.left {
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .75rem;
+  background-color: hsla(264, 100%, 61%, .10);
+  color: hsl(276, 55%, 52%);
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.right {
+  border-bottom-left-radius: .75rem;
+  border-bottom-right-radius: .25rem;
+  color: hsl(271, 15%, 43%);
+  margin-left: auto;
+  margin-right: 0;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.pricing {
+  background: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  color: hsl(276, 100%, 81%);
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: none;
+}
+
+.pricing > button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid hsl(289, 100%, 72%);
+  display: block;
+  background-color: transparent;
+  margin-right: 1rem;
+}
+
+.pricing > span:last-of-type {
+  margin-right: 0;
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: hsl(0, 0%, 100%);
+}
+
+#chat-send {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 500px;
+  padding: 1rem 1rem 1rem 2rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+#chat-send-input::placeholder {
+  color: hsl(206, 6%, 79%);
+  background: none;
+}
+
+#chat-send > span {
+  padding: .5rem;
+  border-radius: 50%;
+  background-color: hsl(271, 36%, 24%);
 }
 
 /* Hero Div */
