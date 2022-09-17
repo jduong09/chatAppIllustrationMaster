@@ -1,14 +1,33 @@
 /* Universal Styles */
 body {
   font-family: 'Rubik', sans-serif;
+  min-height: 100vh;
 }
+
+main {
+  position: relative;
+}
+
+main::after {
+  width: 50%;
+  height: 600px;
+  content: '';
+  background-color:hsl(264, 100%, 61%);
+  position: absolute;
+  z-index: -1;
+  border-bottom-right-radius: 500px;
+  top: 0;
+  left: 0;
+}
+
 /* Chat App */
 .chat-app {
-  background-color: blue;
+  background-color: hsl(0, 0%, 100%);
   border-radius: 2rem;
   padding: .7rem;
   width: 70%;
   margin: 3rem auto;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);;
 }
 
 .chat-header {
@@ -26,12 +45,12 @@ body {
 .chat-header::after {
   content: '';
   width: 60%;
-  height: 40px;
+  height: 20px;
   border-radius: 500px;
   position: absolute;
-  top: -20px;
+  top: -10px;
   left: 20%;
-  background-color: blue;
+  background-color: hsl(0, 0%, 100%);
 }
 
 #chat-avatar {
