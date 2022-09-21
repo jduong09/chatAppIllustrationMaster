@@ -6,14 +6,15 @@ body {
 
 body::after {
   width: 50%;
-  height: 500px;
+  height: 700px;
   content: '';
   background: linear-gradient(to top,hsl(264, 100%, 61%), hsl(293, 100%, 63%));
   position: absolute;
   z-index: -1;
+  border-bottom-left-radius: 500px;
   border-bottom-right-radius: 500px;
   top: 0;
-  left: 0;
+  left: -50px;
 }
 
 main {
@@ -223,4 +224,122 @@ main {
   margin: 0 auto;
   line-height: 1.5rem;
   color: hsl(270, 7%, 64%);
+}
+
+@media (min-width: 575px) {
+  .chat-app {
+    width: 50%;
+  }
+
+  .chat-message, .pricing {
+    max-width: 60%;
+  }
+
+  .chat-message-img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .chat-message-img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .pricing > button {
+    margin-right: .5rem;
+  }
+}
+
+@media (min-width: 766px) {
+  body {
+    position: relative;
+  }
+
+  main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+
+  .chat-app, .hero-div {
+    width: 50%;
+  }
+
+  .hero-div > div {
+    width: 65%;
+  }
+}
+
+@media (min-width: 922px) {
+  body::after {
+    width: 30%;
+  }
+
+  .chat-app {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .chat-recipient > h2 {
+    font-size: .85rem;
+  }
+
+  .chat-message, #chat-send-input::placeholder {
+    font-size: .6rem;
+  }
+
+  .chat-message, .images {
+    max-width: 75%;
+  }
+
+  .chat-message {
+    margin-bottom: .5rem;
+  }
+
+  .chat-message-img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .pricing > button {
+    margin-right: .25rem;
+  }
+
+  .hero-div {
+    text-align: initial;
+  }
+
+  .hero-div > div {
+    margin: 0;
+    width: 85%;
+  }
+}
+
+@media (min-width: 1200px) {
+  body::after {
+    width: 30%;
+  }
+
+  main {
+    width: 70%;
+  }
+
+  .chat-app {
+    width: 32%;
+  }
+
+  .chat-message, .images {
+    max-width: 70%;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  .chat-app {
+    width: 27%;
+  }
 }
