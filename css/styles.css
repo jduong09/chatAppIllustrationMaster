@@ -255,6 +255,10 @@ main {
     position: relative;
   }
 
+  body::after {
+    width: 30%;
+  }
+
   main {
     position: absolute;
     top: 50%;
@@ -265,20 +269,24 @@ main {
     width: 90%;
   }
 
-  .chat-app, .hero-div {
+  .chat-app {
+    width: 40%;
+  } 
+  
+  .hero-div {
     width: 50%;
   }
 
   .hero-div > div {
     width: 65%;
   }
+
+  .chat-message {
+    margin-bottom: .5rem;
+  }
 }
 
 @media (min-width: 922px) {
-  body::after {
-    width: 30%;
-  }
-
   .chat-app {
     width: 30%;
     margin: 0 auto;
@@ -294,10 +302,6 @@ main {
 
   .chat-message, .images {
     max-width: 75%;
-  }
-
-  .chat-message {
-    margin-bottom: .5rem;
   }
 
   .chat-message-img {
